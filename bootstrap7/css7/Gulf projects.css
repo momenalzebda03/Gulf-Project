@@ -36,6 +36,28 @@ body {
     border: none;
 }
 
+.main_button2 {
+    background: -webkit-linear-gradient(85deg, rgb(220, 55, 114), rgb(251, 111, 89));
+    background: linear-gradient(85deg, rgb(220, 55, 114), rgb(251, 111, 89));
+    color: var(--color_white);
+    border-radius: 20px;
+    border: none;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 135px;
+}
+
+.main_button3 {
+    background: -webkit-linear-gradient(85deg, rgb(251, 111, 89), rgb(220, 55, 114));
+    background: linear-gradient(85deg, rgb(251, 111, 89), rgb(220, 55, 114));
+    color: var(--color_white);
+    border-radius: 20px;
+    border: none;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 135px;
+}
+
 .navbar .container div a .main_button:hover,
 .navbar .container div a .main_button1:hover {
     background-color: var(--color_red);
@@ -47,6 +69,23 @@ body {
     padding-left: 10px;
     gap: 10px;
     color: var(--color_black);
+}
+
+.navbar .container div .div_flex .div_mycolor {
+    background-color: rgba(204, 204, 204, 0.218);
+    border-radius: 50%;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 30px;
+}
+
+.navbar .container div .div_flex .div_mycolor a .icon {
+    color: var(--color_white);
+    margin-top: 7.9px;
+}
+
+.navbar .container div .div_flex .div_mycolor:hover {
+    background-color: green;
 }
 
 .navbar .container div .div_flex a {
@@ -61,6 +100,23 @@ body {
     padding-right: 100px;
 }
 
+.navbar .my_center {
+    margin-left: 120px;
+}
+
+.navbar .my_center ul li a {
+    color: var(--color_white);
+}
+
+.navbar .container .my_center ul li a:hover {
+    color: gold;
+}
+
+.navbar .container .my_center ul {
+    display: flex;
+    gap: 15px;
+}
+
 .navbar .container .collapse ul {
     display: flex;
     gap: 15px;
@@ -68,6 +124,11 @@ body {
 
 .navbar .container .collapse ul a:hover {
     color: var(--color_pink);
+}
+
+.bg-light2 {
+    background: -webkit-linear-gradient(-3deg, rgb(22, 11, 79), rgb(12, 13, 62)) !important;
+    background: linear-gradient(-3deg, rgb(22, 11, 79), rgb(12, 13, 62)) !important;
 }
 
 /* end nav */
@@ -136,6 +197,21 @@ body {
     color: var(--color_white);
     padding-top: 100px;
     padding-bottom: 300px;
+}
+
+.div_main2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: -webkit-linear-gradient(-3deg, rgb(22, 11, 79), rgb(12, 13, 62));
+    background: linear-gradient(-3deg, rgb(22, 11, 79), rgb(12, 13, 62));
+    padding-bottom: 180px;
+}
+
+.container_color {
+    padding-top: 5%;
+    padding-bottom: 2%;
+    background-color: #0c0c40eb;
 }
 
 .div_main div .div_flex2 {
@@ -239,11 +315,11 @@ body {
     text-align: right;
 }
 
-.container .div_image img {
+.container .div_image .my_image {
     width: 650px;
 }
 
-.container div h2::after {
+.container div .my_h2::after {
     content: "";
     position: absolute;
     width: 100px;
@@ -263,7 +339,8 @@ body {
     padding-bottom: 80px;
 }
 
-.div_main1 .container .row .div_color {
+.div_main .container .row div .div_color {
+    text-align: center;
     background-color: #153097;
     border-radius: 6px;
     padding-top: 10%;
@@ -274,16 +351,146 @@ body {
     transition: 0.3s;
 }
 
-.div_main1 .container .row .div_color:hover {
+.div_main .container .row div .div_color:hover {
     margin-top: -1%;
 }
 
-.div_main1 .container .row .div_color .icon {
+.div_main .container .row div .div_color .icon {
     font-size: 60px;
 }
 
-.div_main1 .container .row .div_color p {
+.div_main .container .row div .div_color p {
     color: #ccc;
+}
+
+.container_color .container .row div .div_color1 {
+    color: var(--color_white);
+    text-align: center;
+}
+
+.container_color .container .row div .div_color1 .icon {
+    font-size: 60px;
+}
+
+.container_color .container .row div .div_color1 .my_p {
+    color: var(--color_white);
+}
+
+.div_life {
+    padding-top: 3%;
+    padding-bottom: 1%;
+    box-shadow: 0px -5px #090A38;
+    background-color: #0B0C3A;
+}
+
+.div_life .container .row div video {
+    width: 100%;
+}
+
+.div_life .container .row .div_left_box {
+    text-align: right;
+}
+
+.my_life,
+.my_life1 {
+    color: rgb(220, 55, 114);
+    font-size: 40px;
+}
+
+.container_color .my_life,
+.div_life .my_life1 {
+    text-align: center;
+}
+
+.div_life .container .row .div_left_box p {
+    color: var(--color_white);
+}
+
+.div_life .div_box {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 60%;
+    margin-top: 35px;
+    background-color: #08092b;
+    position: relative;
+    left: 19%;
+}
+
+.div_life .div_box .container .row div .div_color2 {
+    background-color: #0c0c40eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div_life .div_box .container .row div .div_color2 img {
+    width: 100%;
+    height: 180px;
+    transition: 0.3s;
+}
+
+.div_life .div_box .container .row div .div_color2 img:hover {
+    transform: rotate(10deg);
+    cursor: pointer;
+}
+
+.container_color .container .row div .card {
+    background-color: #0B0C3A;
+    color: var(--color_white);
+    text-align: right;
+    transition: 0.3s;
+    height: 400px;
+    box-shadow: 0px 8px #090A38;
+}
+
+.container_color .container .row div .card:hover {
+    margin-top: -10px;
+}
+
+.container_color .container .row div .card img {
+    height: 250px;
+}
+
+.container_color .container .row div .card .card-body a {
+    color: gold;
+    text-decoration: none;
+}
+
+.container_color .container .row div .card .card-body a:hover {
+    color: red;
+}
+
+.div_footer1 {
+    background-color: #0B0C3A;
+    color: var(--color_white);
+    padding: 0.1%;
+    padding-top: 1.5%;
+    display: flex;
+    justify-content: center;
+}
+
+.div_form {
+    position: fixed;
+    top: 95%;
+    left: 100%;
+    transition: 1s;
+}
+
+.div_form form input {
+    border-radius: 30px;
+    width: 150px;
+    text-align: right;
+    padding-right: 5%;
+}
+
+.div_icon {
+    position: fixed;
+    background-color: #36CDF8;
+    border-radius: 50px;
+    padding: 0.2%;
+    top: 95%;
+    left: 96%;
+    color: var(--color_white);
 }
 
 .container .row div .my_image {
@@ -316,6 +523,10 @@ body {
         text-align: center;
         flex-direction: column;
     }
+
+    .div_life .container .div_direction {
+        margin-left: 0px;
+    }
 }
 
 @media (max-width: 991px) and (min-width: 0px) {
@@ -346,22 +557,31 @@ body {
         flex-direction: column;
     }
 
-    .container .div_image img {
+    .container .div_image .my_image {
         width: 100%;
     }
 
-    .container div h2::after {
+    .container div .my_h2::after {
         margin-left: -150px;
     }
 
     .container .row div {
         overflow: hidden;
     }
+
+    .navbar .my_center {
+        width: 0%;
+        margin-left: 35px;
+    }
+
+    .div_life .container .row .div_left_box {
+        text-align: center;
+    }
 }
 
 @media (max-width: 270px) and (min-width: 0px) {
     .div_main div .bold {
-        font-size: 45px;
+        font-size: 36px;
     }
 
     .container div h2::after {
