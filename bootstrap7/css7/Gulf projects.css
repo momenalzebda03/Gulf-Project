@@ -4,6 +4,8 @@
     --color_white: white;
     --color_pink: #FF74A0;
     --color_red: red;
+    --color_notblue: #258287;
+    --color_orange: orange;
 }
 
 body {
@@ -66,7 +68,7 @@ body {
 .navbar .container div .div_flex {
     display: flex;
     padding-top: 2px;
-    padding-left: 10px;
+    padding-left: 15px;
     gap: 10px;
     color: var(--color_black);
 }
@@ -104,6 +106,20 @@ body {
     margin-left: 120px;
 }
 
+.div_body .navbar .container .my_center1 {
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.div_body .navbar .container .my_center1 ul {
+    display: flex;
+    gap: 88px;
+}
+
+.div_body .navbar .container .my_center1 ul li a:hover {
+    color: var(--color_notblue);
+}
+
 .navbar .my_center ul li a {
     color: var(--color_white);
 }
@@ -129,6 +145,78 @@ body {
 .bg-light2 {
     background: -webkit-linear-gradient(-3deg, rgb(22, 11, 79), rgb(12, 13, 62)) !important;
     background: linear-gradient(-3deg, rgb(22, 11, 79), rgb(12, 13, 62)) !important;
+}
+
+.div_body {
+    background-color: var(--color_notblue);
+    padding-bottom: 13%;
+}
+
+.div_body .navbar .container div .main_button4 {
+    background-color: #E4745B;
+    color: var(--color_white);
+    border: none;
+    width: 140px;
+    padding: 5%;
+    border-radius: 50px;
+}
+
+.div_body .navbar .container_color_white {
+    background-color: var(--color_white);
+    border-radius: 6px;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.div_body .navbar .container div .div_flex .div_mycolor1 {
+    padding-top: 6%;
+}
+
+.div_body .div_container {
+    margin-top: 100px;
+}
+
+.div_body .div_container .row .div_direction1 {
+    text-align: right;
+}
+
+.div_body .div_container .row .div_video {
+    background: -webkit-linear-gradient(180deg, rgb(228, 116, 91), rgb(233, 125, 91));
+    background: linear-gradient(180deg, rgb(228, 116, 91), rgb(233, 125, 91));
+    color: var(--color_white);
+    border-radius: 0% 0% 50% 0%;
+    position: relative;
+    top: 210px;
+    width: 300px;
+    padding: 2%;
+}
+
+.div_body .div_container .row .div_direction1 .div_flex5 .icon {
+    background-color: var(--color_white);
+    padding: 1.5%;
+    transform: translate(0px, 9px);
+    border-radius: 50%;
+}
+
+.div_body .div_container .row .div_direction1 .div_flex5 .icon:hover {
+    cursor: pointer;
+    color: var(--color_white);
+    background-color: var(--color_red);
+}
+
+.div_body .div_container .row .div_direction1 .div_flex5 .main_button5 {
+    background-color: #E4745B;
+    color: var(--color_white);
+    border: none;
+    width: 140px;
+    padding: 1%;
+    border-radius: 50px;
+}
+
+.div_body .image_back {
+    position: absolute;
+    transform: rotate(180deg);
+    margin-top: 12.5%;
 }
 
 /* end nav */
@@ -351,7 +439,14 @@ body {
     transition: 0.3s;
 }
 
-.div_main .container .row div .div_color:hover {
+.div_color3 .container .row div .card {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.div_main .container .row div .div_color:hover,
+.div_color3 .container .row div .center:hover,
+.div_color3 .container .row div .card:hover {
     margin-top: -1%;
 }
 
@@ -383,12 +478,17 @@ body {
     background-color: #0B0C3A;
 }
 
-.div_life .container .row div video {
+video {
     width: 100%;
 }
 
 .div_life .container .row .div_left_box {
     text-align: right;
+}
+
+.div_body .container .row .div_direction1 .my_life2 {
+    font-size: 40px;
+    color: var(--color_white);
 }
 
 .my_life,
@@ -503,6 +603,104 @@ body {
     width: 100%;
 }
 
+.div_color3 {
+    background-color: #eee;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+
+.div_color3 .container_top {
+    margin-top: 15%;
+}
+
+.div_color3 .container .row div .center {
+    border: 2px solid #ccc;
+    box-shadow: -1px 4px 10px #ccc;
+    border-radius: 6px;
+    text-align: center;
+    padding-top: 11%;
+    height: 85%;
+    margin-top: 5%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.div_color3 .container .row div .center .icon {
+    font-size: 45px;
+}
+
+.div_color3 .container .row div .center .div_Inside {
+    border-radius: 0px 0px 10px 10px;
+}
+
+.div_color3 .container .row div .center .div_Inside h4 {
+    color: var(--color_white);
+}
+
+.container_flex {
+    display: flex;
+    gap: 50px;
+}
+
+.container .div_hr1 {
+    background-color: rgba(0, 0, 0, 0.403);
+    width: 80%;
+    height: 2px;
+}
+
+.container_flex p {
+    font-size: 30px;
+    margin-top: -28px;
+}
+
+.container_flex p span {
+    color: #118E7E;
+}
+
+.container .row div .card .card_image {
+    height: 300px;
+}
+
+.container .row div .card .louk_icon {
+    background-color: #E97156;
+    color: var(--color_white);
+    width: 30px;
+    margin-top: -25px;
+    position: relative;
+    left: 45.5%;
+    font-size: 20px;
+    padding: 2.5%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.container .row div .card .louk_icon:hover {
+    background-color: var(--color_red);
+}
+
+.div_right {
+    text-align: right;
+}
+
+.container .row div .card .div_right a {
+    text-decoration: none;
+}
+
+.div_color4 {
+    margin-top: 100px;
+    background-color: var(--color_notblue);
+    padding-top: 5%;
+}
+
+.div_color4 .container .row div .div_money {
+    width: 100%;
+}
+
+.div_color4 .container .row .div_right h4,
+.div_color4 .container .row .div_right p {
+    color: var(--color_white);
+}
+
 /* end main */
 
 /* start footer */
@@ -526,6 +724,10 @@ body {
 
     .div_life .container .div_direction {
         margin-left: 0px;
+    }
+
+    .div_body .navbar .container .my_center1 ul {
+        gap: 20px;
     }
 }
 
@@ -577,6 +779,14 @@ body {
     .div_life .container .row .div_left_box {
         text-align: center;
     }
+
+    .div_body .div_container .row .div_direction1 {
+        text-align: center;
+    }
+
+    .div_body .div_container .row .div_video {
+        display: none;
+    }
 }
 
 @media (max-width: 270px) and (min-width: 0px) {
@@ -590,6 +800,10 @@ body {
 
     .container .row div .my_image {
         width: 100%;
+    }
+
+    .container_flex p {
+        font-size: 13px;
     }
 }
 
