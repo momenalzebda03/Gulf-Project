@@ -81,6 +81,51 @@ body {
     height: 30px;
 }
 
+.nav_news {
+    padding-bottom: 0.1px;
+    padding-top: 0.1px;
+}
+
+.navbar .container div a .my_icon {
+    color: var(--color_white);
+}
+
+.navbar .container div a .my_icon:hover {
+    color: var(--color_orange);
+}
+
+.navbar .container ul p {
+    margin-top: 15px;
+    color: #eee;
+}
+
+.navbar .container div .here_icon {
+    color: var(--color_white);
+    padding-top: 9.5px;
+}
+
+div ul .div_flex {
+    display: flex;
+}
+
+div ul .div_flex .div_right1 {
+    text-align: right;
+    margin-top: -20px;
+}
+
+.navbar .container .navbar-collapse ul .div_flex .div_right1 .p_margin {
+    color: gold;
+    margin-top: -10px;
+}
+
+.p_gold {
+    color: gold;
+}
+
+div ul .div_flex div .my_image {
+    height: 60px;
+}
+
 .navbar .container div .div_flex .div_mycolor a .icon {
     color: var(--color_white);
     margin-top: 7.9px;
@@ -144,7 +189,6 @@ body {
 
 .bg-light2 {
     background: -webkit-linear-gradient(-3deg, rgb(22, 11, 79), rgb(12, 13, 62)) !important;
-    background: linear-gradient(-3deg, rgb(22, 11, 79), rgb(12, 13, 62)) !important;
 }
 
 .div_body {
@@ -223,6 +267,30 @@ body {
 /* start header */
 .bg-light-one {
     background-color: var(--color_blue) !important;
+}
+
+.bg-light-tow {
+    background-color: #212F54 !important;
+    padding-bottom: 0px;
+    box-shadow: 0px 4px #090A38;
+}
+
+.navbar .container div .div_flex1 ul li a .my_news::before {
+    content: "";
+    position: absolute;
+    top: 75px;
+    background-color: gold;
+    width: 0px;
+    height: 3px;
+    transition: 0.5s;
+}
+
+.navbar .container div .div_flex1 ul li a .my_news:hover::before {
+    width: 80px;
+}
+
+.navbar .container div .div_flex1 ul li a .my_news:hover {
+    color: gold;
 }
 
 .navbar .container div a .main_button1 {
@@ -417,7 +485,7 @@ body {
     margin-left: -100px;
 }
 
-.container div p {
+.container div .p_sport {
     line-height: 44px;
     color: rgba(0, 0, 0, 0.442);
 }
@@ -446,7 +514,9 @@ body {
 
 .div_main .container .row div .div_color:hover,
 .div_color3 .container .row div .center:hover,
-.div_color3 .container .row div .card:hover {
+.div_color3 .container .row div .card:hover,
+.div_color3 .container .row div .div_tweets:hover,
+.container .row div .my_card_image:hover {
     margin-top: -1%;
 }
 
@@ -454,7 +524,8 @@ body {
     font-size: 60px;
 }
 
-.div_main .container .row div .div_color p {
+.div_main .container .row div .div_color p,
+.div_ccc {
     color: #ccc;
 }
 
@@ -661,6 +732,11 @@ video {
     height: 300px;
 }
 
+.container .row div .my_card .card_image1 {
+    border-radius: 10px 10px 0px 0px;
+    height: 350px;
+}
+
 .container .row div .card .louk_icon {
     background-color: #E97156;
     color: var(--color_white);
@@ -688,7 +764,8 @@ video {
 
 .div_color4 {
     margin-top: 100px;
-    background-color: var(--color_notblue);
+    background: -webkit-linear-gradient(-11deg, rgb(42, 129, 121), rgb(53, 169, 158));
+    background: linear-gradient(-11deg, rgb(42, 129, 121), rgb(53, 169, 158));
     padding-top: 5%;
 }
 
@@ -701,6 +778,207 @@ video {
     color: var(--color_white);
 }
 
+.container1 {
+    margin-top: 100px;
+}
+
+.container1 .h1_Place {
+    text-align: right;
+}
+
+.container1 .row {
+    margin-top: -99px;
+}
+
+.container1 .row div {
+    margin-top: 1%;
+}
+
+.container1 .row div img {
+    width: 50%;
+    height: 100px;
+}
+
+.div_color3 .container .row div .div_tweets {
+    background-color: var(--color_white);
+    border-radius: 6px;
+    padding-bottom: 5px;
+    padding-left: 50px;
+    padding-right: 10px;
+    box-shadow: 0px 3px #ccc;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.div_color3 .container .row div .div_tweets .div_between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.div_color3 .container .row div .div_tweets .div_between img {
+    width: 40%;
+}
+
+.div_color3 .container .row div .div_tweets .div_between .div_flex6 {
+    display: flex;
+    gap: 20px;
+}
+
+.div_color3 .container .row div .div_tweets .div_between .div_flex6 .icon {
+    color: var(--color_notblue);
+    padding-top: 11px;
+    font-size: 30px;
+}
+
+.container .row div .my_card .p_elect {
+    margin-left: 83.5%;
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 50px 0px 0px 50px;
+    background-color: #EE5854;
+    width: 17%;
+    color: var(--color_white);
+    z-index: 1;
+    position: absolute;
+}
+
+.my_margin {
+    margin-top: 10px;
+}
+
+.p_color {
+    color: var(--color_white);
+}
+
+.body_back {
+    background-color: #212F54;
+    padding-right: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.container .row div .div_flex8 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #223055;
+    text-align: right;
+    padding-left: 45px;
+    padding-right: 0px;
+    margin-bottom: 4%;
+    border-radius: 20px 0px 0px 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.container .row div .div_flex8 .div_mother .p_color {
+    position: relative;
+    top: 10px;
+    width: 300px;
+}
+
+.container .row div .div_flex8 .div_image .flex_image {
+    width: 220px;
+    height: 100px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.container .row div .div_flex8:hover,
+.container .row div .div_flex9:hover {
+    background-color: #1b3b94;
+}
+
+.container .row div {
+    overflow: hidden;
+}
+
+.container .row div .div_flex9 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #223055;
+    text-align: right;
+    padding-left: 45px;
+    padding-right: 0px;
+    margin-bottom: 4%;
+    border-radius: 20px 0px 0px 20px;
+    transition: 0.5s;
+    cursor: pointer;
+    width: 370px;
+}
+
+.container .row div .div_flex9 .div_mother .p_color {
+    position: relative;
+    top: 10px;
+    width: 190px;
+}
+
+.container .row div .div_flex9 .div_image .flex_image {
+    width: 110px;
+    height: 140px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.container .row div .card_mycolor {
+    padding-top: 10px;
+    padding-bottom: 18px;
+    border-radius: 0px 0px 10px 10px;
+    padding-right: 10px;
+    background-color: #212F54;
+    color: var(--color_white);
+    text-align: right;
+}
+
+.container .row div .my_card_image {
+    height: 200px;
+    border-radius: 10px 10px 0px 0px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.container .row .my_margin .div_elect {
+    text-align: right;
+    margin-right: 27%;
+}
+
+.container .row .my_margin .p_elect {
+    text-align: center;
+    border-radius: 50px 0px 0px 50px;
+    width: 40%;
+    color: var(--color_white);
+    position: relative;
+    top: 70px;
+    left: 60%;
+}
+
+.container .row .my_margin a .button_right {
+    background-color: #ECAD39;
+}
+
+.container .row .my_margin a .button_right1 {
+    background-color: #ADD55A;
+}
+
+.container .row .my_margin a .button_left1 {
+    background-color: #E66991;
+}
+
+
+.container .row .my_margin a .button_left {
+    background-color: #439ADD;
+}
+
+.container .row .my_margin a button {
+    width: 100%;
+    height: 150px;
+    color: var(--color_white);
+    transition: 1s;
+}
+
+.container .row .my_margin a button:hover {
+    background-color: green;
+}
+
 /* end main */
 
 /* start footer */
@@ -710,6 +988,29 @@ video {
     padding: 0.1%;
     text-align: center;
     padding-top: 1.5%;
+}
+
+.div_footer2 {
+    background-color: #39464F;
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+}
+
+.div_footer2 .container .row div p {
+    color: var(--color_white);
+}
+
+.div_footer2 .container .row div .div_flex7 {
+    display: flex;
+    gap: 20px;
+}
+
+.div_footer2 .container .row div .div_flex7 a .icon {
+    color: var(--color_white);
+}
+
+.div_footer2 .container .row div .div_flex7 a .icon:hover {
+    color: var(--color_orange);
 }
 
 /* end footer */
@@ -728,6 +1029,10 @@ video {
 
     .div_body .navbar .container .my_center1 ul {
         gap: 20px;
+    }
+
+    .container .row div .div_flex8 .div_image .flex_image {
+        width: 70px;
     }
 }
 
@@ -786,6 +1091,80 @@ video {
 
     .div_body .div_container .row .div_video {
         display: none;
+    }
+
+    .div_color3 .container .row div .div_tweets .div_between {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .div_color3 .container .row div .div_tweets .div_between .div_flex6 {
+        flex-direction: column;
+        text-align: center;
+        gap: 0px;
+    }
+
+    .div_footer2 {
+        text-align: center;
+    }
+
+    .div_footer2 .container .row div .div_flex7 {
+        flex-direction: column;
+    }
+
+    div ul .div_flex,
+    div ul .div_flex .div_right1,
+    div ul .div_flex div .my_image {
+        text-align: center;
+        flex-direction: column;
+        margin-left: 100px;
+    }
+
+    .navbar {
+        overflow: hidden;
+    }
+
+    .navbar .container div .div_flex1 ul li a .my_news::before {
+        content: "";
+        display: none;
+    }
+
+    .container .row div .my_card .p_elect {
+        margin-left: 0%;
+        border-radius: 0px;
+        width: 100%;
+    }
+
+    .container .row div .my_card .card-body {
+        text-align: center;
+    }
+
+    .container .row div .div_flex8 {
+        flex-direction: column-reverse;
+        padding-top: 2%;
+        text-align: center;
+        padding-left: 0px;
+        margin-top: 15px;
+    }
+
+    .container .row div .div_flex8 .div_image .flex_image {
+        height: 100px;
+    }
+
+    .container .row div .div_flex9 {
+        flex-direction: column-reverse;
+        padding-top: 2%;
+        text-align: center;
+        padding-left: 0px;
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    .container .row .my_margin .p_elect {
+        width: 100%;
+        top: 70px;
+        left: 0%;
+        border-radius: 0px;
     }
 }
 
