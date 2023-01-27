@@ -40,7 +40,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="gotech.html">
                                 <p class="my_news">الفاتورات والعروض</p>
                             </a>
                         </li>
