@@ -1076,6 +1076,12 @@ video {
     color: #39464F;
 }
 
+.div_center .p_padding {
+    padding-left: 500px;
+    padding-right: 500px;
+    color: var(--color_black);
+}
+
 .bold {
     font-weight: bold;
 }
@@ -1175,7 +1181,7 @@ video {
     border-radius: 6px;
 }
 
-.container_mycolor .row div .div_center1 {
+.div_center1 {
     background-color: var(--color_white);
     border: 2px solid #ccc;
     border-radius: 6px;
@@ -1206,6 +1212,115 @@ video {
 .div_center2 .icon:hover {
     background-color: red;
     color: var(--color_white);
+}
+
+.container .row div .div_center1 .p_color1 {
+    padding-top: 20px;
+    color: rgba(0, 0, 0, 0.512);
+}
+
+.container .row div .div_center1 a {
+    text-decoration: none;
+    color: #49BE55;
+}
+
+.container .row div .div_center1 a:hover {
+    color: red;
+}
+
+.container .row div .div_mypadding {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    margin-top: 5px;
+}
+
+.div_center .p_padding::after {
+    content: "\2c";
+    margin-left: 30px;
+    margin-top: -170px;
+    font-size: 100px;
+    color: var(--color_black);
+    position: absolute;
+}
+
+.div_center .p_padding::before {
+    content: "\2c";
+    margin-left: -30px;
+    margin-top: -120px;
+    font-size: 100px;
+    color: var(--color_black);
+    position: absolute;
+}
+
+.div_color_my {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: -webkit-radial-gradient(rgb(163, 206, 242), rgb(233, 245, 255));
+    background: radial-gradient(rgb(163, 206, 242), rgb(233, 245, 255));
+}
+
+.div_color_my .div_sinup {
+    text-align: left;
+    background-color: var(--color_white);
+    padding-top: 25px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    width: 700px;
+    position: relative;
+}
+
+.div_color_my div .sinup_image {
+    position: absolute;
+    margin-top: 190px;
+    margin-left: 250px;
+}
+
+.div_color_my div .sinup_image1 {
+    position: absolute;
+    margin-top: 190px;
+    margin-left: 470px;
+}
+
+.div_color_my .div_sinup .div_flex {
+    display: flex;
+    gap: 30px;
+}
+
+.div_color_my .div_sinup .div_flex div .my_input {
+    width: 300px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 15px;
+    margin-top: 10px;
+}
+
+.my_input1 {
+    width: 98%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 15px;
+    margin-top: 10px;
+}
+
+.div_imis_flex {
+    display: flex;
+    gap: 650px;
+    position: absolute;
+    margin-top: -170px;
+    margin-left: -180px;
+}
+
+.div_imis_flex img {
+    width: 200px;
+    height: 181px;
 }
 
 /* end main */
@@ -1264,10 +1379,6 @@ video {
         width: 70px;
     }
 
-    .div_image1 {
-        display: none;
-    }
-
     .div_gallery .container_image1 .div_flex,
     .div_gallery .container_image1 .div_flex .div_flex1 {
         display: flex;
@@ -1285,6 +1396,17 @@ video {
 
     .div_gallery .container_image1 .div_flex .p_elect {
         margin-top: 300px;
+    }
+
+    .div_center .p_padding {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .div_color_my div .sinup_image1,
+    .div_imis_flex,
+    .div_image1 {
+        display: none;
     }
 }
 
@@ -1456,13 +1578,51 @@ video {
         width: 100%;
     }
 
-    .container_mycolor .row div .div_center1 {
+    .div_center1 {
         padding-left: 0px;
         padding-right: 0px;
     }
 
-    .container_mycolor .row div .div_center1 img {
+    .div_center1 img {
         width: 100%;
+    }
+
+    .container .row div .div_mypadding img {
+        width: 100px;
+    }
+
+    .div_center .image_center {
+        width: 50%;
+    }
+
+    .div_center .p_padding::before,
+    .div_center .p_padding::after {
+        display: none;
+    }
+
+    .div_color_my .div_sinup {
+        width: 90%;
+        margin-left: 5%;
+        padding-right: 5%;
+        text-align: center;
+    }
+
+    .div_color_my .div_sinup .div_flex {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .div_color_my .div_sinup .div_flex div {
+        padding-top: 10px;
+    }
+
+    .div_color_my .div_sinup .div_flex div .my_input {
+        width: 100%;
+    }
+
+
+    .div_color_my div .sinup_image {
+        display: none;
     }
 }
 
