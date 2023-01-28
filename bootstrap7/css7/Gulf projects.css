@@ -1214,7 +1214,7 @@ video {
     color: var(--color_white);
 }
 
-.container .row div .div_center1 .p_color1 {
+.p_color1 {
     padding-top: 20px;
     color: rgba(0, 0, 0, 0.512);
 }
@@ -1255,7 +1255,7 @@ video {
 .div_color_my {
     text-align: center;
     padding-top: 50px;
-    padding-bottom: 10px;
+    padding-bottom: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1267,10 +1267,11 @@ video {
     text-align: left;
     background-color: var(--color_white);
     padding-top: 25px;
-    padding-bottom: 10px;
+    padding-bottom: 120px;
     padding-left: 20px;
     width: 700px;
     position: relative;
+    border-radius: 6px;
 }
 
 .div_color_my div .sinup_image {
@@ -1310,12 +1311,22 @@ video {
     margin-top: 10px;
 }
 
+.my_input2 {
+    width: 515%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 15px;
+    margin-top: 10px;
+}
+
 .div_imis_flex {
     display: flex;
-    gap: 650px;
+    gap: 510px;
     position: absolute;
-    margin-top: -170px;
-    margin-left: -180px;
+    margin-top: -98px;
+    margin-left: -200px;
 }
 
 .div_imis_flex img {
@@ -1355,6 +1366,101 @@ video {
 
 .div_footer2 .container .row div .div_flex7 a .icon:hover {
     color: var(--color_orange);
+}
+
+.div_footer3 {
+    padding-top: 60px;
+    text-align: center;
+}
+
+.div_footer3 .container .row div .div_hereflex {
+    margin-left: 112px;
+    display: flex;
+    gap: 30px;
+}
+
+.p_hover {
+    color: rgba(0, 0, 0, 0.512);
+    margin-top: -4.9px;
+}
+
+.p_hover:hover,
+.about:hover {
+    color: var(--color_red);
+}
+
+.about {
+    text-align: left;
+    color: rgba(0, 0, 0, 0.512);
+    margin-left: 102px;
+}
+
+.div_footer3 .container .row div .div_hereflex .icon {
+    color: #9D60EB;
+}
+
+.div_footer3 .container .row .div_left {
+    text-align: left;
+}
+
+.div_footer3 .container .row div .marginleft {
+    margin-left: 0px;
+}
+
+.div_footer3 .container .row .div_left .div_mygapflex {
+    display: flex;
+    gap: 30px;
+}
+
+.div_footer3 .container .row .div_left .div_mygapflex .icon {
+    padding: 10px;
+    border-radius: 50px;
+    transition: 0.4s;
+    color: var(--color_white);
+    cursor: pointer;
+}
+
+.div_footer3 .container .row .div_left .div_mygapflex .icon1 {
+    background-color: #6362D7;
+}
+
+.div_footer3 .container .row .div_left .div_mygapflex .icon2 {
+    background-color: #00B56C;
+}
+
+.div_footer3 .container .row .div_left .div_mygapflex .icon3 {
+    background-color: #FF9AB6;
+}
+
+.div_footer3 .container .row .div_left .div_mygapflex .icon4 {
+    background-color: #F09376;
+}
+
+.div_footer3 .container .row .div_left .div_mygapflex .icon:hover {
+    background-color: red;
+}
+
+.div_footer3 .div_skew {
+    background-color: #EEF7FF;
+    width: 100%;
+    height: 150px;
+    margin-top: 120px;
+}
+
+.div_footer3 .div_skew::before {
+    content: "";
+    background-color: #EEF7FF;
+    transform: skewY(-6deg);
+    width: 100%;
+    height: 22vh;
+    position: absolute;
+    left: 0%;
+    margin-top: -80px;
+}
+
+.div_footer3 .div_skew .container .row div .copyright {
+    color: rgba(0, 0, 0, 0.512);
+    padding-top: 70px;
 }
 
 /* end footer */
@@ -1404,9 +1510,24 @@ video {
     }
 
     .div_color_my div .sinup_image1,
-    .div_imis_flex,
+    .div_none,
     .div_image1 {
         display: none;
+    }
+
+    .button_our1 {
+        margin-left: 200px;
+        width: 100px;
+    }
+
+    .div_imis_flex {
+        display: flex;
+        gap: 0px;
+    }
+
+    .my_input2 {
+        width: 60%;
+        margin-left: 190px;
     }
 }
 
@@ -1624,6 +1745,36 @@ video {
     .div_color_my div .sinup_image {
         display: none;
     }
+
+    .div_footer3 .container .row div .div_hereflex {
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about {
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .div_footer3 .container .row .div_left {
+        text-align: center;
+    }
+
+    .div_footer3 .container .row .div_left .div_mygapflex {
+        display: flex;
+        gap: 3px;
+        flex-direction: column;
+    }
+
+    .my_input2 {
+        width: 30%;
+        margin-left: 190px;
+    }
+
+    .div_footer3 .div_skew {
+        height: 350px;
+    }
 }
 
 @media (max-width: 270px) and (min-width: 0px) {
@@ -1646,6 +1797,10 @@ video {
     .div_center .button_more {
         margin-top: 10px;
         margin-left: 0px;
+    }
+
+    .div_footer3 .div_skew div .row div img {
+        width: 100%;
     }
 }
 
