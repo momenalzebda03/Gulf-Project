@@ -272,19 +272,16 @@ div ul .div_flex div .my_image {
     font-weight: bold;
 }
 
-.navbar .container .collapse .ul_center li a::before {
-    content: "";
-    position: absolute;
-    transform: translate(16px, 28px);
+.navbar .container .collapse .ul_center li .a_before {
     width: 8px;
     height: 8px;
     border-radius: 50%;
     background-color: #9D60EB;
     display: none;
+    margin-top: -7px;
 }
 
-.navbar .container .collapse .ul_center li a:hover::before {
-    content: "";
+.navbar .container .collapse .ul_center li a:hover+.a_before {
     display: block;
 }
 
@@ -1024,45 +1021,58 @@ video {
 }
 
 .div_image1 {
+    width: 100%;
+    z-index: -1;
     position: absolute;
+    display: flex;
+    justify-content: space-between;
 }
 
-.div_image1 .image1 {
-    margin-top: 60px;
-    padding-left: 50px;
+.div_image1 .div_imageleft,
+.div_image1 .div_imageright {
+    margin-left: 80px;
+    margin-top: 40px;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
 }
 
-.div_image1 .image2 {
-    transform: translate(0px, 170px);
-    padding-left: 50px;
+.div_image1 .div_imageleft img,
+.div_image1 .div_imageright img {
+    width: 60px;
 }
 
-.div_image1 .image3 {
-    transform: translate(-200px, 320px);
+.div_image1 .div_imageleft .image2 {
+    margin-left: 150px;
 }
 
-.div_image1 .image4 {
-    transform: translate(-200px, 450px);
+.div_image1 .div_imageleft .image3 {
+    margin-left: -20px;
 }
 
-.div_image1 .image5 {
-    transform: translate(-230px, 465px);
+.div_image1 .div_imageleft .image4 {
+    margin-left: 150px;
 }
 
-.div_image1 .image6 {
-    transform: translate(680px, 105px);
+.div_image1 .div_imageleft .image5 {
+    margin-left: 205px;
+    margin-top: -70px;
 }
 
-.div_image1 .image7 {
-    transform: translate(790%, 55px);
+.div_image1 .div_imageright .image6 {
+    margin-left: -250px;
 }
 
-.div_image1 .image8 {
-    transform: translate(1290%, 255px);
+.div_image1 .div_imageright .image7 {
+    margin-left: -100px;
 }
 
-.div_image1 .image9 {
-    transform: translate(490%, 400px);
+.div_image1 .div_imageright .image8 {
+    margin-left: -230px;
+}
+
+.div_image1 .div_imageright .image9 {
+    margin-left: -210px;
 }
 
 .div_center {
@@ -1234,22 +1244,11 @@ video {
     margin-top: 5px;
 }
 
-.div_center .p_padding::after {
-    content: "\2c";
-    margin-left: 30px;
-    margin-top: -170px;
-    font-size: 100px;
-    color: var(--color_black);
+.div_center .p_padding .not_icon {
+    font-size: 130px;
     position: absolute;
-}
-
-.div_center .p_padding::before {
-    content: "\2c";
-    margin-left: -30px;
-    margin-top: -120px;
-    font-size: 100px;
-    color: var(--color_black);
-    position: absolute;
+    margin-top: -70px;
+    margin-left: -28px;
 }
 
 .div_color_my {
@@ -1443,7 +1442,7 @@ video {
 .div_footer3 .div_skew {
     background-color: #EEF7FF;
     width: 100%;
-    height: 150px;
+    height: 250px;
     margin-top: 120px;
 }
 
@@ -1455,12 +1454,25 @@ video {
     height: 22vh;
     position: absolute;
     left: 0%;
-    margin-top: -80px;
+    margin-top: -99px;
 }
 
-.div_footer3 .div_skew .container .row div .copyright {
+.div_footer3 .div_skew .container_flexmy .copyright {
     color: rgba(0, 0, 0, 0.512);
-    padding-top: 70px;
+    margin-top: 70px;
+    width: 130%;
+}
+
+.div_footer3 .div_skew .container_flexmy {
+    position: absolute;
+    display: flex;
+    gap: 200px;
+    margin-top: 60px;
+    padding-left: 50px;
+}
+
+.div_footer3 .div_skew .container_flexmy img {
+    width: 500px;
 }
 
 /* end footer */
@@ -1511,7 +1523,7 @@ video {
 
     .div_color_my div .sinup_image1,
     .div_none,
-    .div_image1 {
+    .div_center .p_padding .not_icon {
         display: none;
     }
 
@@ -1528,6 +1540,11 @@ video {
     .my_input2 {
         width: 60%;
         margin-left: 190px;
+    }
+
+    .div_footer3 .div_skew .container_flexmy {
+        gap: 50px;
+        padding-left: 0px;
     }
 }
 
@@ -1547,10 +1564,6 @@ video {
 
     .navbar .container div .div_flex1 ul {
         gap: 0px;
-    }
-
-    .navbar-light::before {
-        display: none;
     }
 
     .div_main div .div_flex2 {
@@ -1584,10 +1597,6 @@ video {
         text-align: center;
     }
 
-    .div_body .div_container .row .div_video {
-        display: none;
-    }
-
     .div_color3 .container .row div .div_tweets .div_between {
         flex-direction: column;
         text-align: center;
@@ -1617,11 +1626,6 @@ video {
 
     .navbar {
         overflow: hidden;
-    }
-
-    .navbar .container div .div_flex1 ul li a .my_news::before {
-        content: "";
-        display: none;
     }
 
     .container .row div .my_card .p_elect {
@@ -1677,10 +1681,6 @@ video {
         width: 100%;
     }
 
-    .navbar .container .collapse form .hearch_icon {
-        display: none;
-    }
-
     .div_center p {
         padding-left: 0px;
         padding-right: 0px;
@@ -1716,11 +1716,6 @@ video {
         width: 50%;
     }
 
-    .div_center .p_padding::before,
-    .div_center .p_padding::after {
-        display: none;
-    }
-
     .div_color_my .div_sinup {
         width: 90%;
         margin-left: 5%;
@@ -1739,11 +1734,6 @@ video {
 
     .div_color_my .div_sinup .div_flex div .my_input {
         width: 100%;
-    }
-
-
-    .div_color_my div .sinup_image {
-        display: none;
     }
 
     .div_footer3 .container .row div .div_hereflex {
@@ -1772,8 +1762,30 @@ video {
         margin-left: 190px;
     }
 
+    .div_image1,
+    .div_color_my div .sinup_image,
+    .div_center .p_padding::before,
+    .div_center .p_padding::after,
+    .navbar .container .collapse form .hearch_icon,
+    .navbar .container div .div_flex1 ul li a .my_news::before,
+    .div_body .div_container .row .div_video,
+    .navbar-light::before {
+        display: none;
+    }
+
     .div_footer3 .div_skew {
-        height: 350px;
+        height: 600px;
+    }
+
+    .div_footer3 .div_skew .container_flexmy {
+        flex-direction: column;
+        overflow: hidden;
+        padding-left: 0px;
+        margin-top: -80px;
+    }
+
+    .div_footer3 .div_skew .container_flexmy img {
+        width: 100%;
     }
 }
 
@@ -1799,8 +1811,8 @@ video {
         margin-left: 0px;
     }
 
-    .div_footer3 .div_skew div .row div img {
-        width: 100%;
+    .div_footer3 .div_skew .container_flexmy {
+        padding-left: 0px;
     }
 }
 
