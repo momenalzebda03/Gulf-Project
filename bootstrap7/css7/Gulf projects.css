@@ -39,13 +39,11 @@ body {
 }
 
 .main_button2 {
-    background: -webkit-linear-gradient(85deg, rgb(220, 55, 114), rgb(251, 111, 89));
-    background: linear-gradient(85deg, rgb(220, 55, 114), rgb(251, 111, 89));
     color: var(--color_white);
     border-radius: 20px;
     border: none;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
     width: 135px;
 }
 
@@ -60,16 +58,14 @@ body {
     width: 135px;
 }
 
-.navbar .container div a .main_button:hover,
-.navbar .container div a .main_button1:hover {
+.navbar .container div a .main_button:hover {
     background-color: var(--color_red);
 }
 
 .navbar .container div .div_flex {
     display: flex;
-    padding-top: 2px;
-    padding-left: 15px;
-    gap: 10px;
+    padding-top: 3px;
+    gap: 12px;
     color: var(--color_black);
 }
 
@@ -88,10 +84,6 @@ body {
 
 .navbar .container div a .my_icon {
     color: var(--color_white);
-}
-
-.navbar .container div a .my_icon:hover {
-    color: var(--color_orange);
 }
 
 .navbar .container ul p {
@@ -118,6 +110,11 @@ div ul .div_flex .div_right1 {
     margin-top: -10px;
 }
 
+.icon_search {
+    margin-top: 14px;
+    margin-left: -45px;
+}
+
 .p_gold {
     color: gold;
 }
@@ -127,8 +124,12 @@ div ul .div_flex div .my_image {
 }
 
 .navbar .container div .div_flex .div_mycolor a .icon {
-    color: var(--color_white);
     margin-top: 7.9px;
+}
+
+.input_search {
+    border-radius: 6px;
+    border: 2px solid #ccc;
 }
 
 .navbar .container div .div_flex .div_mycolor:hover {
@@ -147,15 +148,6 @@ div ul .div_flex div .my_image {
     padding-right: 100px;
 }
 
-.navbar .my_center {
-    margin-left: 120px;
-}
-
-.div_body .navbar .container .my_center1 {
-    font-weight: bold;
-    margin-left: 50px;
-}
-
 .div_body .navbar .container .my_center1 ul {
     display: flex;
     gap: 88px;
@@ -165,8 +157,16 @@ div ul .div_flex div .my_image {
     color: var(--color_notblue);
 }
 
-.navbar .my_center ul li a {
+section .navbar .container div .div_flex .div_mycolor .icon_white {
     color: var(--color_white);
+}
+
+.navbar .my_center ul li .color_white {
+    color: var(--color_white);
+}
+
+.navbar .my_center ul li .color_black {
+    color: var(--color_black);
 }
 
 .navbar .container .my_center ul li a:hover {
@@ -194,15 +194,6 @@ div ul .div_flex div .my_image {
 .div_body {
     background-color: var(--color_notblue);
     padding-bottom: 13%;
-}
-
-.div_body .navbar .container div .main_button4 {
-    background-color: #E4745B;
-    color: var(--color_white);
-    border: none;
-    width: 140px;
-    padding: 5%;
-    border-radius: 50px;
 }
 
 .div_body .navbar .container_color_white {
@@ -237,24 +228,14 @@ div ul .div_flex div .my_image {
 
 .div_body .div_container .row .div_direction1 .div_flex5 .icon {
     background-color: var(--color_white);
-    padding: 1.5%;
     transform: translate(0px, 9px);
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .div_body .div_container .row .div_direction1 .div_flex5 .icon:hover {
-    cursor: pointer;
     color: var(--color_white);
     background-color: var(--color_red);
-}
-
-.div_body .div_container .row .div_direction1 .div_flex5 .main_button5 {
-    background-color: #E4745B;
-    color: var(--color_white);
-    border: none;
-    width: 140px;
-    padding: 1%;
-    border-radius: 50px;
 }
 
 .div_body .image_back {
@@ -272,7 +253,7 @@ div ul .div_flex div .my_image {
     font-weight: bold;
 }
 
-.navbar .container .collapse .ul_center li .a_before {
+section .navbar .container .my_center ul li .a_before {
     width: 8px;
     height: 8px;
     border-radius: 50%;
@@ -289,8 +270,8 @@ div ul .div_flex div .my_image {
     color: #9D60EB;
 }
 
-.navbar .container .collapse form .hearch_icon {
-    transform: translate(-35px, 10px);
+.hearch_icon {
+    margin-left: -23px;
 }
 
 .navbar .container .collapse form .button_contact {
@@ -331,16 +312,6 @@ div ul .div_flex div .my_image {
     color: gold;
 }
 
-.navbar .container div a .main_button1 {
-    background-color: #36CDF8;
-    border-radius: 50%;
-    border: none;
-    color: var(--color_white);
-    padding-left: 30%;
-    padding-right: 30%;
-    margin-top: 30%;
-}
-
 .navbar .container div .div_flex1 {
     padding-left: 25px;
 }
@@ -363,19 +334,10 @@ div ul .div_flex div .my_image {
     color: gold;
 }
 
-.navbar-light {
-    overflow: hidden;
-    position: relative;
-}
-
-.navbar-light::before {
-    content: "";
-    width: 1200px;
-    height: 1px;
+section .navbar .container .hr_start {
     position: absolute;
-    margin-top: 40px;
-    margin-left: 8%;
-    background-color: rgba(238, 238, 238, 0.245);
+    width: 1200px;
+    color: gold;
 }
 
 .navbar .container .collapse ul li img {
@@ -703,7 +665,7 @@ video {
 }
 
 .container .row div .my_image {
-    width: 109%;
+    width: 350px;
     transition: 0.5s;
 }
 
@@ -739,6 +701,7 @@ video {
 }
 
 .div_color3 .container .row div .center .div_Inside {
+    padding: 10px;
     border-radius: 0px 0px 10px 10px;
 }
 
@@ -775,20 +738,24 @@ video {
     height: 350px;
 }
 
-.container .row div .card .louk_icon {
+.container .row div .card {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.container .row div .card .louk_icon .icon {
     background-color: #E97156;
     color: var(--color_white);
-    width: 30px;
+    width: 20px;
     margin-top: -25px;
-    position: relative;
-    left: 45.5%;
     font-size: 20px;
-    padding: 2.5%;
+    padding: 2%;
     border-radius: 50%;
     cursor: pointer;
 }
 
-.container .row div .card .louk_icon:hover {
+.container .row div .card .louk_icon .icon:hover {
     background-color: var(--color_red);
 }
 
@@ -848,24 +815,13 @@ video {
     cursor: pointer;
 }
 
-.div_color3 .container .row div .div_tweets .div_between {
-    display: flex;
-    justify-content: space-between;
-}
-
-.div_color3 .container .row div .div_tweets .div_between img {
+.div_color3 .container .row div .div_tweets .row img {
     width: 40%;
 }
 
-.div_color3 .container .row div .div_tweets .div_between .div_flex6 {
-    display: flex;
-    gap: 20px;
-}
-
-.div_color3 .container .row div .div_tweets .div_between .div_flex6 .icon {
+.div_color3 .container .row div .div_tweets .row .icon {
     color: var(--color_notblue);
-    padding-top: 11px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .container .row div .my_card .p_elect {
@@ -1354,16 +1310,11 @@ video {
     color: var(--color_white);
 }
 
-.div_footer2 .container .row div .div_flex7 {
-    display: flex;
-    gap: 20px;
-}
-
-.div_footer2 .container .row div .div_flex7 a .icon {
+.div_footer2 .container .row div a .icon {
     color: var(--color_white);
 }
 
-.div_footer2 .container .row div .div_flex7 a .icon:hover {
+.div_footer2 .container .row div a .icon:hover {
     color: var(--color_orange);
 }
 
@@ -1441,9 +1392,7 @@ video {
 
 .div_footer3 .div_skew {
     background-color: #EEF7FF;
-    width: 100%;
-    height: 250px;
-    margin-top: 120px;
+    height: 320px;
 }
 
 .div_footer3 .div_skew::before {
@@ -1454,25 +1403,13 @@ video {
     height: 22vh;
     position: absolute;
     left: 0%;
-    margin-top: -99px;
+    z-index: -1;
 }
 
 .div_footer3 .div_skew .container_flexmy .copyright {
     color: rgba(0, 0, 0, 0.512);
     margin-top: 70px;
-    width: 130%;
-}
-
-.div_footer3 .div_skew .container_flexmy {
-    position: absolute;
-    display: flex;
-    gap: 200px;
-    margin-top: 60px;
-    padding-left: 50px;
-}
-
-.div_footer3 .div_skew .container_flexmy img {
-    width: 500px;
+    /* width: 130%; */
 }
 
 /* end footer */
@@ -1523,7 +1460,8 @@ video {
 
     .div_color_my div .sinup_image1,
     .div_none,
-    .div_center .p_padding .not_icon {
+    .div_center .p_padding .not_icon,
+    section .navbar .container .hr_start {
         display: none;
     }
 
@@ -1545,6 +1483,10 @@ video {
     .div_footer3 .div_skew .container_flexmy {
         gap: 50px;
         padding-left: 0px;
+    }
+
+    .div_color3 .container .row div .div_tweets .row div p {
+        font-size: 11px;
     }
 }
 
@@ -1580,15 +1522,6 @@ video {
         margin-left: -150px;
     }
 
-    .container .row div {
-        overflow: hidden;
-    }
-
-    .navbar .my_center {
-        width: 0%;
-        margin-left: 35px;
-    }
-
     .div_life .container .row .div_left_box {
         text-align: center;
     }
@@ -1610,10 +1543,6 @@ video {
 
     .div_footer2 {
         text-align: center;
-    }
-
-    .div_footer2 .container .row div .div_flex7 {
-        flex-direction: column;
     }
 
     div ul .div_flex,
@@ -1768,8 +1697,7 @@ video {
     .div_center .p_padding::after,
     .navbar .container .collapse form .hearch_icon,
     .navbar .container div .div_flex1 ul li a .my_news::before,
-    .div_body .div_container .row .div_video,
-    .navbar-light::before {
+    .div_body .div_container .row .div_video {
         display: none;
     }
 
@@ -1787,6 +1715,10 @@ video {
     .div_footer3 .div_skew .container_flexmy img {
         width: 100%;
     }
+
+    .container .row div .my_image {
+        width: 100%;
+    }
 }
 
 @media (max-width: 270px) and (min-width: 0px) {
@@ -1796,10 +1728,6 @@ video {
 
     .container div h2::after {
         margin-left: -88px;
-    }
-
-    .container .row div .my_image {
-        width: 100%;
     }
 
     .container_flex p {
